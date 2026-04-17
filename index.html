@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KohoJiro Cybersecurity & Networking Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">KohoJiro</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <ul class="nav-mobile" id="mobileMenu">
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+      <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-mon">
+        <img src="mon.png" alt="KohoJiro mon" />
+      </div>
+      <p class="hero-eyebrow">Cybersecurity Services</p>
+      <h1 class="hero-title">KohoJiro</h1>
+      <p class="hero-sub">Protecting small businesses with professional-grade security — clear reports, honest advice, real results.</p>
+      <div class="hero-cta">
+        <a href="#services" class="btn-primary">View Services</a>
+        <a href="#contact" class="btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">&#8595;</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Security you can understand.<br>From someone you can trust.</h2>
+          <p>I'm Justin Gerbert, founder of KohoJiro Cybersecurity & Networking Services, based in Hilo, Hawaii. With over five years of IT support experience spanning help desk, network troubleshooting, VoIP, and security monitoring, I started KohoJiro to bring professional cybersecurity capabilities to small businesses that can't afford enterprise solutions.</p>
+          <p>I'm currently completing the Google Cybersecurity Professional Certificate and run an active home security lab (Project Karasu) — a real-world environment where I practice threat detection, honeypot deployment, and network hardening every day.</p>
+          <p>I believe cybersecurity advice should be clear, actionable, and honest — not buried in jargon designed to upsell you.</p>
+          <div class="about-badges">
+            <span class="badge">Google Cybersecurity Cert (in progress)</span>
+            <span class="badge">5+ Years IT Support</span>
+            <span class="badge">Hilo, Hawaii</span>
+          </div>
+        </div>
+        <div class="about-aside">
+          <div class="about-stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-lbl">Years IT Experience</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-num">24/7</span>
+            <span class="stat-lbl">Active Home Lab</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-lbl">Honest Reporting</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section section-dark">
+    <div class="container">
+      <div class="section-label">Services</div>
+      <h2 class="section-title">What I offer</h2>
+      <p class="section-intro">Professional cybersecurity & networking services tailored for small businesses, freelancers, and individuals who need real protection without enterprise pricing.</p>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">&#128196;</div>
+          <h3>Security Scan Reports</h3>
+          <p>I run professional vulnerability scans using Nmap, Nessus, and OpenVAS on your network or systems, then convert the raw output into a clear, human-readable PDF report with prioritized findings and remediation steps.</p>
+          <div class="service-tag">Most Popular</div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#128269;</div>
+          <h3>Network Assessment</h3>
+          <p>A comprehensive review of your network architecture, device inventory, open ports, and security posture. Delivered as a written report with specific, actionable recommendations.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#128274;</div>
+          <h3>Security Hardening</h3>
+          <p>Hands-on configuration of firewalls, routers, and systems to close common vulnerabilities. Includes before/after documentation so you can see exactly what changed and why.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#128202;</div>
+          <h3>Security Consultation</h3>
+          <p>Not sure where your risks are? A one-hour consultation to review your current setup, answer your questions, and build a prioritized security roadmap you can act on immediately.</p>
+        </div>
+
+      </div>
+      <div class="services-cta">
+        <a href="#contact" class="btn-primary">Request a Service</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="section-label">Portfolio</div>
+      <h2 class="section-title">Project Karasu</h2>
+      <p class="section-intro">My personal security lab — a real-world environment running 24/7 to sharpen detection skills, test configurations, and document findings.</p>
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card">
+          <h3>Cowrie SSH Honeypot</h3>
+          <p>Deployed a Cowrie medium-interaction SSH honeypot to capture and analyze unauthorized access attempts. Logs attacker behavior, credential stuffing patterns, and post-login commands in a safe isolated environment.</p>
+          <div class="portfolio-tech">
+            <span>Cowrie</span><span>Docker</span><span>Ubuntu Server</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <h3>Network Traffic Filtering</h3>
+          <p>Running Pi-hole for DNS-level ad and malware domain blocking across the entire home network. Configured custom blocklists and whitelist rules, monitoring query logs for anomalous lookup patterns.</p>
+          <div class="portfolio-tech">
+            <span>Pi-hole</span><span>DNS</span><span>Network Security</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <h3>Intrusion Prevention</h3>
+          <p>Fail2Ban configured to monitor SSH, web server, and application logs — automatically banning IPs exceeding failed login thresholds. Custom jail rules tuned to reduce false positives.</p>
+          <div class="portfolio-tech">
+            <span>Fail2Ban</span><span>Traefik</span><span>Linux</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <h3>Reverse Proxy & TLS</h3>
+          <p>Traefik reverse proxy managing internal service routing with automatic TLS certificate provisioning via Let's Encrypt. Containerized services isolated behind a single hardened entry point.</p>
+          <div class="portfolio-tech">
+            <span>Traefik</span><span>Docker</span><span>Let's Encrypt</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's talk security</h2>
+      <p class="section-intro">Have a question, a project in mind, or just want to know where your biggest risks are? Reach out — first conversation is always free.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-lbl">Email</span>
+            <a href="mailto:j.gerbert.cyber@gmail.com">j.gerbert.cyber@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-lbl">LinkedIn</span>
+            <a href="https://linkedin.com/in/justingerbertcyber" target="_blank">linkedin.com/in/justingerbertcyber</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-lbl">Location</span>
+            <span>Hilo, Hawaii — Remote services available</span>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <div class="contact-form">
+            <input type="text" placeholder="Your name" />
+            <input type="email" placeholder="Your email" />
+            <textarea placeholder="Tell me about your project or question..." rows="5"></textarea>
+            <a href="mailto:j.gerbert.cyber@gmail.com" class="btn-primary">Send Message</a>
+            <p class="form-note">This will open your email client with my address pre-filled.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">KohoJiro</span>
+        <span class="footer-copy">&copy; 2026 KohoJiro Cybersecurity & Networking Services. Hilo, Hawaii.</span>
+        <a href="https://linkedin.com/in/justingerbertcyber" target="_blank" class="footer-li">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const m = document.getElementById('mobileMenu');
+      m.classList.toggle('open');
+    }
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
